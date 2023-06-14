@@ -1,4 +1,4 @@
-function ProfileCard({title, handle}) {
+function ProfileCard({title, handle, image}) {
   // const title = props.title;
   // const handle = props.handle;
   // const { title, handle } = props; //same as the lines above
@@ -6,6 +6,9 @@ function ProfileCard({title, handle}) {
     <div>
       <div>Title is {title}</div>
       <div>Handle is {handle}</div>
+      <div>
+        <img src={image} alt="logo" />
+      </div>
     </div>
   );
 }
